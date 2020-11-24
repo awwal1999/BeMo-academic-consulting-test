@@ -42,12 +42,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function tasks()
+    public function cards()
     {
         return $this->hasMany(Card::class);
     }
 
-    public function statuses()
+    public function columns()
     {
         return $this->hasMany(Column::class)->orderBy('order');
     }
@@ -55,7 +55,7 @@ class User extends Authenticatable
     protected static function booted()
     {
         static::created(function ($user) {
-            $user->statuses()->createMany([
+            $user->columns()->createMany([
                 [
                     'title' => 'Backlog',
                     'slug' => 'backlog',

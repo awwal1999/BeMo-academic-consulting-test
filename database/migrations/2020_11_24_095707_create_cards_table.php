@@ -18,8 +18,8 @@ class CreateCardsTable extends Migration
             $table->string('title');
             $table->text('description')->nullable();
             $table->smallInteger('order')->default(0);
-            $table->unsignedInteger('user_id');
-            $table->unsignedInteger('column_id');
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('column_id');
             $table->timestamps();
 
             $table->foreign('column_id')->references('id')->on('columns')->onDelete('cascade');

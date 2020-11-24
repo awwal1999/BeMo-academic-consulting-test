@@ -15,7 +15,7 @@ class CreateColumnsTable extends Migration
     {
         Schema::create('columns', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('user_id');
+            $table->unsignedBigInteger('user_id');
             $table->string('title');
             $table->string('slug');
             $table->smallInteger('order')->default(0);

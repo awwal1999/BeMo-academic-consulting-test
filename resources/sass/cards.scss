@@ -53,6 +53,15 @@ $list-bg-color: #e2e4e6;
     }
 }
 
+.btn {
+    padding:4px 5px;
+    display:inline-block;
+    border-radius:3px;
+    background:#ccc;
+    font-size:11px;
+    color:#333;
+}
+
 .column {
     width: $list-width;
     height: calc(100% - #{$gap} - #{$scrollbar-thickness});
@@ -104,5 +113,12 @@ $list-bg-color: #e2e4e6;
                 border-top-right-radius: $card-border-radius;
             }
         }
+    }
+    .block {
+        display: block;
+    }
+    .form-input {
+        margin: 10px;
+        padding: 5px;
     }
 }

@@ -25,6 +25,8 @@
     },
     "dependencies": {
         "sass": "^1.29.0",
-        "sass-loader": "^10.1.0"
+        "sass-loader": "^10.1.0",
+        "vue-js-modal": "^2.0.0-rc.6",
+        "vuedraggable": "^2.24.3"
     }
 }
