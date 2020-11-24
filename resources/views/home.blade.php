@@ -2,7 +2,6 @@
 
 @section('content')
 <div class="ui">
-{{--    <nav class="navbar app">App bar</nav>--}}
     <nav class="navbar board">Project Board</nav>
     <div class="columns">
         <div class="column">
